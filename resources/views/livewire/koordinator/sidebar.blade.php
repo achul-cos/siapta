@@ -2,9 +2,8 @@
 
     <nav class="bg-primary fixed top-0 z-10 border-4 border-dark w-screen h-24 max-md:hidden min-md:block">
         <div class="h-full p-4 flex flex-row justify-between items-center transition-all duration-500 ms-46" :class="openSidebar ? 'ms-46' : '!ms-0'">
-            <div class="flex flex-col font-sans text-dark truncate" x-data="clock()" x-init="startClock()">
+            <div class="flex flex-col font-sans text-dark truncate">
                 <p class="text-2xl truncate max-w-[calc(100vw-60vw)]">Hai, <span class="font-bold">{{ Auth::user()->nama ?? 'Nama Pengguna' }}</span></p>
-                <p x-text="time" class="truncate max-w-[calc(100vw-60vw)]"></p>
             </div>
             <div class="flex flex-row-reverse items-center gap-4">
                 <button @click="openMenu = !openMenu" class="focus:outline-none">
@@ -22,9 +21,8 @@
     <!-- Mobile -->
     <nav class="bg-primary fixed top-0 z-10 border-4 border-dark w-screen h-24 min-md:hidden max-md:block">
         <div class="h-full p-4 flex flex-row justify-between items-center transition-all duration-500">
-            <div class="flex flex-col font-sans text-dark" x-data="clock()" x-init="startClock()">
+            <div class="flex flex-col font-sans text-dark">
                 <p class="text-2xl truncate max-w-[calc(100vw-60vw)]">Hai, <span class="font-bold">{{ Auth::user()->nama ?? 'Nama Pengguna' }}</span></p>
-                <p x-text="time" class="truncate max-w-[calc(100vw-60vw)]"></p>
             </div>
             <div class="flex flex-row-reverse items-center gap-4">
 

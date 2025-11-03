@@ -36,6 +36,8 @@ Route::middleware(['auth:koordinator'])->prefix('koordinator')->name('koordinato
 
 });
 
+Route::get('/test-mahasiswa-modal', \App\Livewire\Components\MahasiswaTableAction::class);
+
 // Route::prefix('mahasiswa')->name('mahasiswa.')->group(function () {
     
 //     Route::get('/daftar-sidang', \App\Livewire\Mahasiswa\DaftarSidang::class)->name('daftar-sidang');

@@ -6,7 +6,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <title>{{ config('app.name') ?? 'SiapTA' }}</title>
     </head>
-    <body class="bg-background antialiased min-h-screen" x-data="{ sidebarOpen: true }" x-init="window.addEventListener('sidebar-toggled', e => sidebarOpen = e.detail)">      
+    <body class="bg-background antialiased min-h-screen h-full min-w-screen w-full" x-data="{ sidebarOpen: true }" x-init="window.addEventListener('sidebar-toggled', e => sidebarOpen = e.detail)">   
+        @livewire('wire-elements-modal')
         {{ $slot }}
     </body>
 </html>

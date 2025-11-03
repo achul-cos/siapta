@@ -10,7 +10,7 @@
     <!-- Failed Modal -->
     @if (session('failed'))
         <livewire:components.failed/>
-    @endif     
+    @endif
 
     <div class="relative w-full z-0 min-h-[calc(100vh)] pt-28 flex flex-col bg-cover bg-no-repeat bg-top-right overflow-hidden transition-all duration-500 max-md:ps-0 min-md:ps-48"
          :class="sidebarOpen ? 'min-md:!ps-48 max-md:!ps-0' : 'min-md:!ps-0 max-md:!ps-0'">
@@ -26,7 +26,7 @@
         <!-- Konten Utama -->
         <div class="flex flex-row justify-between w-full flex-1 border-b-2 z-10 border-dark">
             <div class="w-8 text-dark bg-[image:repeating-linear-gradient(315deg,currentColor_0,currentColor_1px,transparent_0,transparent_4%)]"></div>
-            <div class="w-full border-x-2 border-dark p-4 px-8 flex flex-col gap-y-8">              
+            <div class="w-full border-x-2 border-dark p-4 px-8 flex flex-col gap-y-8">        
                 <div class="flex flex-col gap-y-4">
                     <p class="text-xl font-bold text-dark border-b-2 pe-4 pb-2">Detail Tugas Akhir</p>
                     <div class="" :class=" sidebarOpen ? 'max-w-[calc(100vw*0.8)]' : 'max-w-[calc(100vw*0.9)]'">
